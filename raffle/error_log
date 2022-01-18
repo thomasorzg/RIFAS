@@ -1,0 +1,7 @@
+[19-Dec-2019 18:36:22 UTC] PHP Fatal error:  Uncaught Exception: Unable to create link for payment in /home1/rifasma1/boletos.rifasmalverdefranciscoarguelles.com/raffle/request.php:37
+Stack trace:
+#0 {main}
+  thrown in /home1/rifasma1/boletos.rifasmalverdefranciscoarguelles.com/raffle/request.php on line 37
+[21-Dec-2019 09:34:00 UTC] PHP Warning:  require(../dbengine/dbconnect.php): failed to open stream: No such file or directory in /home1/rifasma1/boletos.rifasmalverdefranciscoarguelles.com/raffle/raffle.php on line 3
+[21-Dec-2019 09:34:00 UTC] PHP Warning:  require(../dbengine/dbconnect.php): failed to open stream: No such file or directory in /home1/rifasma1/boletos.rifasmalverdefranciscoarguelles.com/raffle/raffle.php on line 3
+[21-Dec-2019 09:34:00 UTC] PHP Fatal error:  require(): Failed opening required '../dbengine/dbconnect.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home1/rifasma1/boletos.rifasmalverdefranciscoarguelles.com/raffle/raffle.php on line 3
