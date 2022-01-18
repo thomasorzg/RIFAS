@@ -1,6 +1,11 @@
 <?php
-  require("../dbengine/dbconnect.php");
-
+  $conn = mysqli_connect("us-cdbr-east-05.cleardb.net", "bd5451d44bcc7d", "180c444f", "heroku_caebebeebb91053");
+  if(!$conn) {
+    echo "Database failed to open!";
+  }
+  
+  mysqli_set_charset($conn, "utf8");
+  
   function generateRandomString($length = 3) {
       $characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
       $charactersLength = strlen($characters);
