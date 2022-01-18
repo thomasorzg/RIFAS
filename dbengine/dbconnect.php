@@ -14,8 +14,8 @@ mysqli_set_charset($conn, "utf8");
 
 if(!$conn) {
 	echo "Database failed to open!";
-} else {
+} /*else {
 	echo "Database connected successfully...";
-}
+}*/
 
 ?>
