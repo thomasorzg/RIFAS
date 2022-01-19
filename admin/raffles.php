@@ -62,7 +62,7 @@
         $raffle_id = mysqli_insert_id($conn);
 
         // Trae la cantidad de cifras
-        $query = "SELECT real_digits FROM raffle_tickets WHERE real_id = $_POST[real_id] LIMIT 1";
+        $query = "SELECT real_digits FROM real_tickets WHERE real_id = $_POST[real_id] LIMIT 1";
         $getcifra = mysqli_query($conn, $query);
         $cifra = mysqli_fetch_assoc($getcifra);
 
@@ -102,7 +102,7 @@
           $deletedata = mysqli_query($conn, $query);
 
           // Trae la cantidad de cifras
-	        $query = "SELECT real_digits FROM raffle_tickets WHERE real_id = $_POST[real_id] LIMIT 1";
+	        $query = "SELECT real_digits FROM real_tickets WHERE real_id = $_POST[real_id] LIMIT 1";
 	        $getcifra = mysqli_query($conn, $query);
 	        $cifra = mysqli_fetch_assoc($getcifra);
 
@@ -168,7 +168,7 @@
                 <select name="real_id" id="real_id">
                   <option value="">Selecciona una cantidad</option>
                   <?php 
-                  $data = mysqli_query($conn, "SELECT * FROM raffle_tickets");
+                  $data = mysqli_query($conn, "SELECT * FROM real_tickets");
                   if(($data) && (mysqli_num_rows($data) > 0)) {
                   //getting data and generating a row
                     while($row=mysqli_fetch_assoc($data)) {
@@ -248,7 +248,7 @@
                 <select name="real_id" id="edit-real_id">
                   <option value="">Selecciona una cantidad</option>
                   <?php 
-                  $data = mysqli_query($conn, "SELECT * FROM raffle_tickets");
+                  $data = mysqli_query($conn, "SELECT * FROM real_tickets");
                   if(($data) && (mysqli_num_rows($data) > 0)) {
                   //getting data and generating a row
                     while($row=mysqli_fetch_assoc($data)) {
